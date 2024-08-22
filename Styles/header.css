@@ -1,0 +1,157 @@
+/* Creating a flexible grid - flex */
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  left:0;
+  right:0;
+  top:0;
+  height:55px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style:solid;
+  border-bottom-color: rgb(206, 202, 202);
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.hamburger-logo{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.youtube-logo{
+  height: 20px;
+  cursor: pointer;
+}
+.middle-section{
+  flex:1;
+  margin-left: 64px;
+  margin-right: 34px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar{
+  flex: 1;
+  height:36px;
+  padding-left: 10px;
+  font-size: 16px;
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: rgb(186, 181, 181); */
+  /* using CSS-shorthand */
+  border: 1px solid rgb(186, 181, 181);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05);
+  width: 0;
+}
+.search-bar::placeholder{
+  font-size: 16px;
+}
+
+.search-button{
+  height: 39px;
+  width: 66px;
+  background-color: #f7f7f7 ;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style:solid;
+  border-color: rgb(186, 181, 181);
+  margin-left: -1px;
+  cursor: pointer;
+  
+}
+.search-button,
+.voice-search,
+.upload-icon-container,
+.youtube-apps-container,
+.notif-bar {
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tool-tip,
+.voice-search .tool-tip,
+.upload-icon-container .tool-tip,
+.youtube-apps-container .tool-tip,
+.notif-bar .tool-tip{
+  position: absolute;
+  background-color: gray;
+  color:white;
+  font-size:12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 2px;
+  bottom:-36px;
+  opacity: 0; /*invisible*/
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap; /*in order not to wrap the text*/
+}
+.search-button:hover .tool-tip,
+.voice-search:hover .tool-tip,
+.upload-icon-container:hover .tool-tip,
+.youtube-apps-container:hover .tool-tip,
+.notif-bar:hover .tool-tip{
+  opacity:0.9;
+}
+
+.search-icon{
+  height:25px;
+}
+.voice-search{
+  height:38px;
+  width: 38px;
+  margin-left: 18px;
+  border-radius: 19px;
+  border: none;
+  cursor: pointer;
+}
+.right-section{
+  margin-right: 20px;
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.upload-icon{
+  height: 24px;
+  cursor: pointer;
+}
+.youtube-apps{
+  height:24px;
+  cursor: pointer;
+}
+.notif-icon{
+  height: 24px;
+  cursor: pointer;
+}
+.notif-count{
+  position:absolute;
+  background-color: rgb(206, 25, 25);
+  color:white;
+  top:-2px;;
+  right: -5px; 
+  font-size:11px;
+  border-radius:10px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:  2px;
+  padding-bottom:2px;
+}
+.mychnl-icon{
+  height: 34px;
+  cursor: pointer;
+}
+

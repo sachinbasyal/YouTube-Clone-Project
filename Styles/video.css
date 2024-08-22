@@ -1,0 +1,70 @@
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 10px;
+}
+/* CSS-Responsive Design to make videos frame adjustible when webpage shrinks or enlarges */
+/*Media Query*/
+@media (max-width: 700px) {
+  .container-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 701px) and (max-width: 999px){
+  .container-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .container-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.container-vert1{
+  margin-bottom:12px;
+  position: relative;  /* form positioning video-time relatively to the page*/
+  cursor: pointer;
+}
+.thumbnail-img{
+  width:100%
+}
+.video-time{
+  background-color: black;
+  color:white;
+  position: absolute;
+  bottom: 10px;
+  right:5px;
+  font-size:12px;
+  font-weight:500;
+  /*padding is set for giving space inside the box(content) */
+  /* padding-left:2px; 
+  padding-right: 2px;
+  padding-top:4px;
+  padding-bottom:4px; */
+  padding: 4px 2px; /*starting from top-right-bottom-left (clockwise) */
+}
+.container-vert2-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 8px;
+}
+.profile-pic{   
+  width: 50px;
+  border-radius: 25px;
+}
+.video-title{
+  font-size:14px;
+  margin-bottom: 6px;
+  font-weight:500;
+  line-height: 18px;
+}
+.video-author,
+.video-stats{
+  font-size: 12px;
+  color: #606060; /*#606060 denotes the hex values of RGB */
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+

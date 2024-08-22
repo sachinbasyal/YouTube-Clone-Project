@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Styles/video.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/general.css" />
+    <link rel="stylesheet" href="Styles/sidebar.css" />
+  </head>
+  <body>
+    <!--Semantic elements: <header>,<nav>, <main>, & <section> = same as <div> but they have meaning to screen readers->
+    <!--Header design- semantic element-->
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-logo" src="Icons/hamburger-menu.svg" alt="" />
+        <img class="youtube-logo" src="Icons/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="Icons/search.svg" alt="" />
+          <div class="tool-tip">Search</div>
+        </button>
+        <button class="voice-search">
+          <img src="Icons/voice-search-icon.svg" alt="" />
+          <div class="tool-tip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="Icons/upload.svg" alt="" class="upload-icon" />
+          <div class="tool-tip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img src="Icons/youtube-apps.svg" alt="" class="youtube-apps" />
+          <div class="tool-tip">YouTube Apps</div>
+        </div>
+        <div class="notif-bar">
+          <img src="Icons/notifications.svg" alt="" class="notif-icon" />
+          <div class="notif-count">9</div>
+          <div class="tool-tip">Notificatons</div>
+        </div>
+        <img src="Icons/my-channel.png" alt="" class="mychnl-icon" />
+      </div>
+    </header>
+
+    <!--Sidebar design-->
+    <nav class="side-bar">
+      <div class="sidebar-link">
+        <img class="home-icon" src="Icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/explore.svg" alt="" class="explore-icon" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/subscriptions.svg" alt="" class="subs-icon" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/originals.svg" alt="" class="org-icon" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/youtube-music.svg" alt="" class="ytmusic-icon" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/library.svg" alt="" class="lib-icon" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container-grid">
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <img class="thumbnail-img" src="Thumbnail/thumbnail-1.webp" />
+            </a>
+            <div class="video-time">14:20</div>
+            <!--position should be absolute here-->
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-1.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee &check;</p>
+              <p class="video-stats">3.5M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img class="thumbnail-img" src="Thumbnail/thumbnail-2.webp" />
+            </a>
+            <div class="video-time">18:45</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-2.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Try Not To Laugh Challenge and Be Serious #9
+              </p>
+              <p class="video-author">Markie Pillar &check;</p>
+              <p class="video-stats">6M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-3.webp" />
+            </a>
+            <div class="video-time">28:30</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-3.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee &check;</p>
+              <p class="video-stats">3.5M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-4.webp" />
+            </a>
+            <div class="video-time">10:30</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-4.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Try Not To Laugh Challenge and Be Serious #9
+              </p>
+              <p class="video-author">Markie Pillar &check;</p>
+              <p class="video-stats">6M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-5.webp" />
+            <div class="video-time">11:15</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-5.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee &check;</p>
+              <p class="video-stats">3.5M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-6.webp" />
+            <div class="video-time">30:30</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-6.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Try Not To Laugh Challenge and Be Serious #9
+              </p>
+              <p class="video-author">Markie Pillar &check;</p>
+              <p class="video-stats">6M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-1.webp" />
+            <div class="video-time">11:03</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-1.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee &check;</p>
+              <p class="video-stats">3.5M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-2.webp" />
+            <div class="video-time">05:20</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-2.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Try Not To Laugh Challenge and Be Serious #9
+              </p>
+              <p class="video-author">Markie Pillar &check;</p>
+              <p class="video-stats">6M views &#183; 9 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-video-preview">
+          <div class="container-vert1">
+            <img class="thumbnail-img" src="Thumbnail/thumbnail-3.webp" />
+            <div class="video-time">10:20</div>
+          </div>
+          <div class="container-vert2-grid">
+            <div class="channel-picture-Horz1">
+              <img class="profile-pic" src="Thumbnail/channel-3.jpeg" />
+            </div>
+            <div class="video-info-Horz2">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee &check;</p>
+              <p class="video-stats">3.5M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

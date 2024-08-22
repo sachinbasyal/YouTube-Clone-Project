@@ -1,0 +1,15 @@
+body{
+  margin:0; 
+  font-family:Roboto, Arial; /*font stack: if Roboto fails to retrieve from source, Arial will work as a backup font  */
+  /* color: red; the texts inside <body> gets red in color except those specified individually */
+  padding-top: 80px;
+  padding-left:96px;
+  padding-right: 24px;
+  background-color: rgb(246, 243, 243);
+}
+p {
+  /*font-family: Roboto, Arial; Not necessary to rewrite this code in <p> as the font & text properties got inherited from the <body> */ 
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left:8px;
+}
